@@ -7,3 +7,10 @@ let string2="alphabet";
 console.log(string1>string2); //false
 
 console.log(string1.toLowerCase()>string2.toLowerCase());//true
+
+//比较两个数值字符串时，会比较字符串背后的编码
+console.log("23"<"3"); //true   2的字符编码是50，3的字符编码是51
+
+
+//数值字符串与数值比较，会将数值字符串转换成数值，然后再比较
+console.log("23">3);//true
